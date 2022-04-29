@@ -1,0 +1,269 @@
+*{
+    margin: 0px; /*Margem externa das caixas*/
+    padding: 0px; /*Mergem interna das caixas*/
+    box-sizing: border-box; /*Ajuste das caixas sem a soma com a largura*/
+}
+nav{
+    background-color: rgb(255, 0, 119);
+    padding: 10px;
+    text-align:right;
+    transition: ease 0.2s;
+    flex-direction: row;
+     display:flex;
+}
+.link{
+    list-style: none;
+    text-align: center;
+}
+.link{
+    display: inline-block;
+    margin-block: 2px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+.link::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+.link:hover::after{
+    transform: scaleX(1);
+}
+#logo{
+    display: flex;
+
+}
+#logo img{
+    position: static;
+    width: 70px;
+    height: 70px;
+
+    border-radius:10px
+}
+nav ul{
+    margin-left: 450px;
+}
+nav ul li{
+    /* Colocar os elementos em linhas */
+    display: inline-block;
+    /* Espaço entre os links*/
+    margin: 10px;
+    margin-top: 25px;
+}
+nav ul li a{
+    color: white;
+    font-family: arial;
+    font-size: 17pt;
+    /* tirar o sublinado dos links*/
+    text-decoration: none;
+}
+#redes{
+    position: static;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#redes ul{
+    /* retirar as bolinhas de marcação*/
+    list-style: none;
+}
+#redes ul li {
+    display: inline-block;
+    margin-top: 25px;
+}
+#redes ul li a img{
+    width: 25px;
+    height: 25px;
+}
+header{
+    padding-top: 50px;
+    text-align: center;
+    background-size: 100%;
+    background-position-y: -300px;
+    background-image: url("https://images7.alphacoders.com/404/404658.jpg");
+    border-radius:50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 50px;
+}
+h1{
+    font-family:"Gill Sans";
+    font-size: 65pt;
+    /* Vamos aplicar uma sombra: 
+    1-Elemento é a posição horizontal da somba;
+    2-Elemento é a posição vetical da sombra
+    3-Elemento é o efeito de esfumação da sombra */
+    text-shadow: 2px 2px 5px black;
+    color: #fff;
+
+  }
+main{
+    padding: 20px;
+}
+#endereco{
+    font-family: arial;
+    font-size:14pt;
+    color: black;
+    width: 300px;
+    text-align: center;
+}
+/* ================== Incio da formatação css para o home ============================== */
+h2{
+    text-align: center;
+    font-family:courier;
+    font-size:30pt;
+    border-bottom: dashed darkslateblue;
+    margin:20px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+
+}
+main p{
+    margin: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:justify;
+    font-family: "Lucida Sans";
+    font-size: 12pt;
+    line-height: 24px;
+    background-color: rgb(252, 242, 229);
+    border-radius: 10px;
+}
+#imghome{
+    text-align: center;
+    transition: ease 1s;
+}
+#imghome img{
+    width: 600px;
+    height: 600px;
+    border-radius: 50px;
+    margin: 30px;
+    transition: ease 1s;
+}
+
+body{
+   background-image: url(../img/fundo3.´ng.jpg);
+}
+footer {
+    background-color: rgb(255, 0, 119);
+    /* Permitir com que o rodapé fique com seu conteúdo flexível */
+    display: flex;
+    /* Dispor o conteudo em linha */
+    flex-direction: row;
+    /* AJustar o conteúdo com justify-content: e Align_Itens; */
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+#imghome img:hover{
+    cursor: pointer;
+   z-index: 1000;
+   transform: scale(1.5);
+   box-shadow: 0px 0px 0px 100vw rgba(0, 0, 0, 0.8);
+}
+
+/* Inicio de estilização da pagina produtos */
+h3{
+    text-transform: uppercase;
+    font-size: 20pt;
+    font-family: verdana;
+    color: rgb(190, 127, 10);
+    margin: 30px;
+    text-shadow: 2px 2px 5px black;
+}
+#tabelapreco{
+    border-radius: 50px;
+
+    background: linear-gradient(
+        to right,#833ab4,
+        #4c00ff, #ff0140
+    );
+    background-size: 400% 400%;
+    animation: animate-backgroud 10s infinite ease-in-out;
+}
+@keyframes animate-backgroud{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+#tabelapreco #imgtabela img{
+    align-items: center;
+    margin-left: 500px;
+    width: 40%;
+    border-radius: 50px;
+    box-shadow: 0 0 15px 5px;
+}
+
+#linha {
+    display: flex;
+    flex-direction: row;
+    /* Realizar a quebra de linha para os demais produtos que forem adicionados*/
+    flex-wrap: wrap;
+    background-color: rgb(252, 242, 229);
+    border-radius: 60px;
+  }
+  #linha #produto {
+    width: 40%;
+    margin: 10px;
+    /* Determinar que o conteudo do produto será flexiviel */
+    display: flex;
+    flex-direction: row;
+    margin-right: 125px;
+    margin-bottom: 90px;
+  }
+  
+  #linha #produto #imgprod img {
+    width:  100%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px 6px silver;
+  }
+  h4 {
+    font-family: verdana;
+    font-size: 20pt;
+    margin-right: 10px;
+  }
+  h5 {
+    font-family: "Lucida Sans";
+    font-weight: lighter;
+    font-size: 10pt;
+    color: gray;
+  }
+  h6 {
+    font-family: "Lucida Sans";
+    color: darkred;
+    font-size: 20pt;
+    margin: 30px;
+    margin-left: auto;
+  }
+  #linha #produto:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  h2 {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+  }
+  
+  
+  /* ================== Fim dos estilos para o cardápio ====================*/
+  
