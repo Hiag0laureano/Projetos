@@ -88,8 +88,31 @@ header{
     padding-top: 50px;
     text-align: center;
     background-size: 100%;
-    background-position-y: -300px;
-    background-image: url("https://images7.alphacoders.com/404/404658.jpg");
+    background-position-y: -450px;
+    background-image: url("https://diaonline.ig.com.br/wp-content/uploads/2019/01/doces-em-goiania-lugares-para-provar-verdadeiras-delicias-9.jpg");
+    border-radius:50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 50px;
+}#produtoheader{
+    padding-top: 50px;
+    text-align: center;
+    background-size: 100%;
+    background-position-y: -380px;
+    background-image: url("https://cdn.folhape.com.br/img/pc/1100/1/dn_arquivo/2021/10/0910sa2120.jpg");
+    border-radius:50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 50px;
+}
+#contato{
+    padding-top: 50px;
+    text-align: center;
+    background-size: 100%;
+    background-position-y: -400px;
+    background-image: url("https://diaonline.ig.com.br/wp-content/uploads/2020/07/salgados-em-rio-verde-opcoes-para-comprar-na-hora-ou-encomendar.png");
     border-radius:50px;
     margin-top: 50px;
     margin-left: 50px;
@@ -147,8 +170,8 @@ main p{
     transition: ease 1s;
 }
 #imghome img{
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
     border-radius: 50px;
     margin: 30px;
     transition: ease 1s;
@@ -157,19 +180,7 @@ main p{
 body{
    background-image: url(../img/fundo3.´ng.jpg);
 }
-footer {
-    /* width: 100%;
-    background-color: rgb(255, 81, 0); */
-    /* Permitir com que o rodapé fique com seu conteúdo flexível */
-    /* display: flex; */
-    /* Dispor o conteudo em linha */
-    flex-direction: row;
-    /* AJustar o conteúdo com justify-content: e Align_Itens; */
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    margin-top: 500px;
-}
+
 #imghome img:hover{
     cursor: pointer;
    z-index: 1000;
@@ -187,34 +198,13 @@ h3{
     text-shadow: 2px 2px 5px black;
     border-bottom: dashed darkslateblue;
 }
-#tabelapreco{
-    border-radius: 50px;
-
-    background: linear-gradient(
-        to right,#833ab4,
-        #4c00ff, #ff0140
-    );
-    background-size: 400% 400%;
-    animation: animate-backgroud 10s infinite ease-in-out;
-}
-@keyframes animate-backgroud{
-    0%{
-        background-position: 0 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0 50%;
-    }
-}
-#tabelapreco #imgtabela img{
-    align-items: center;
-    margin-left: 500px;
-    width: 40%;
-    border-radius: 50px;
-    box-shadow: 0 0 15px 5px;
-}
+#linha #produto #imgproduto img {
+    width: 300px;
+    height: 300px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin: 10px;
+  }
 
 #linha {
     display: flex;
@@ -222,7 +212,7 @@ h3{
     /* Realizar a quebra de linha para os demais produtos que forem adicionados*/
     flex-wrap: wrap;
     background-color: rgb(252, 242, 229);
-    border-radius: 60px;
+    border-radius: 50px;
   }
   #linha #produto {
     width: 40%;
@@ -250,7 +240,7 @@ h3{
     font-family: "Lucida Sans";
     font-weight: lighter;
     font-size: 10pt;
-    color: gray;
+    color: rgb(51, 51, 51);
   }
   h6 {
     font-family: "Lucida Sans";
