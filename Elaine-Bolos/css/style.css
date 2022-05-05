@@ -51,7 +51,8 @@ nav{
     border-radius:10px
 }
 nav ul{
-    margin-left: 450px;
+    
+    
 }
 nav ul li{
     /* Colocar os elementos em linhas */
@@ -119,6 +120,19 @@ header{
     margin-right: 50px;
     padding-bottom: 50px;
 }
+#locaheader{
+    padding-top: 50px;
+    text-align: center;
+    background-size: 100%;
+    background-position-y: -400px;
+    background-image: url("https://soupetropolis.com/wp-content/uploads/2020/07/kit-festa.jpg");
+    border-radius:50px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 50px;
+}
+
 
 h1{
     font-family:"Gill Sans";
@@ -262,7 +276,93 @@ h3{
   
   
   /* ================== Fim dos estilos para o cardápio ====================*/
-.titmain {
+/* ================== Incio do estilo do contato ====================== */
+
+main form {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 50px rgb(31, 6, 6);
+    background-color: rgb(255, 81, 0);
+    border-radius: 20px;
+  }
+  
+  main form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: Verdana;
+    border: 0px;
+    border-bottom: 1px solid black;
+    outline: 0px;
+    outline-color: brown;
+    border-radius: 5px;
+  }
+  main form input,
+  main form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: Verdana;
+    border: 0px;
+    border-bottom: 1px solid black;
+    outline: 0px;
+    outline-color: brown;
+    border-radius: 5px;
+  }
+  main form input,
+  main form select,
+  main form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: Verdana;
+    border: 0px;
+    border-bottom: 1px solid black;
+    outline: 0px;
+    outline-color: brown;
+  }
+  main form input[type="tel"],
+  main form select {
+    width: 49.6%;
+  }
+  main form textarea {
+    height: 200px;
+    border-radius: 5px;
+  }
+  main form input[type="submit"] {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    width: 20%;
+    border: 0px;
+    transition: ease 0.5s;
+  }
+  main form input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
+  
+  /* ================== Fim do estilo do contato ======================== */
+  
+  /* ================== Incio do estilo do mapa =========================== */
+
+#mapa {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #mapa iframe {
+    width: 100%;
+    height: 500px;
+  }
+  /* ================== Fim do estilo do mapa =========================== */
+  
+
+  .titmain {
     width: 100%;
     background: url(/imagens/layout/titbg.png);
     margin: 30px 0;
@@ -335,5 +435,111 @@ body {
     margin: 0;
     width: 100%;
 }
-/* Resposividade do site */
+/* ================== Aréa de responsividade ========================== */
+/* Telas de smartphones */
+@media (min-width: 0px) and (max-width: 576px) {
+    header {
+        height: 150px;
+        background-position-y: -160px;
+    }
+    h1 {
+      font-size: 25pt;
+    }
+    h2{
+        font-size: 15pt;
+    }
+    nav {
+      /* width: 200px; */
+      height: 70vh;
+      position: absolute;
+      border-radius: 20px;
+      display: block;
+      box-shadow: 0px 0px 10px 2px black;
+      
+    }
+    nav ul li {
+        width: 85%;
+      display: block;
+      text-align: center;
+      margin-bottom:0px;
+      border-bottom: 2px solid rgb(245, 171, 147);
+    }
+    #abrir {
+      padding: 5px;
+      font-size: 20pt;
+      display: block;
+      text-decoration: none;
+      color: rgb(255, 81, 0);
+      width: 35px;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+    }
+    #fechar {
+      padding: 5px;
+      font-size: 30pt;
+      display: block;
+      text-decoration: none;
+      color: black;
+      width: 35px;
+      position: absolute;
+      top: 0px;
+      left: 5px;
+      cursor: pointer;
+    }
+    #imghome img {
+      width: 250px;
+      height: 250px;
+    }
+    .rodape{
+        display: inline-block;
+        /* text-align: center; */
+        padding: 5px;
+        font-size: 0.5em;
+        bottom: 15px;
+      }
+      .rodbox {
+        display: inline-block;
+        width: 100%;
+        max-width: 100px;
+        vertical-align: top;
+        padding: 5px 5px 5px;
+    }
+      #endereco,
+      #redes {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #linha {
+        flex-direction: column;
+      }
+      #linha #produto {
+        width: 100%;
+        flex-direction: column;
+      }
+      #linha #produto #imgprod,
+      #linha #produto #descricao {
+        width: 90%;
+        margin: 15px;
+        transition: ease 0.5s;
+      }
+    }
+    main form {
+      width: 90%;
+    }
+    #produtoheader{
+        height: 150px;
+        background-position-y: -200px;
+        /* padding-top: 140px;
+        background-size: 100%;*/
+    }
+    #contato{
+        height: 150px;
+        background-position-y: -160px;
 
+    }
+    #locaheader{
+        height: 150px;
+        background-position-y: -160px;
+
+    }
