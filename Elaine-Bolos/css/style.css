@@ -1,382 +1,375 @@
-*{
-    margin: 0px; /*Margem externa das caixas*/
-    padding: 0px; /*Mergem interna das caixas*/
-    box-sizing: border-box; /*Ajuste das caixas sem a soma com a largura*/
+* {
+  margin: 0px; /*Margem externa das caixas*/
+  padding: 0px; /*Mergem interna das caixas*/
+  box-sizing: border-box; /*Ajuste das caixas sem a soma com a largura*/
 }
 
-nav{
-    background-color: rgb(255, 81, 0);
-    padding: 10px;
-    text-align:right;
-    transition: ease 0.2s;
-    flex-direction: row;
-     display:flex;
+nav {
+  background-color: rgb(255, 81, 0);
+  padding: 10px;
+  text-align: right;
+  transition: ease 0.2s;
+  flex-direction: row;
+  display: flex;
 }
-.link{
-    list-style: none;
-    text-align: center;
+.link {
+  list-style: none;
+  text-align: center;
 }
-.link{
-    display: inline-block;
-    margin-block: 2px;
-    text-decoration: none;
-    color: #fff;
-    position: relative;
+.link {
+  display: inline-block;
+  margin-block: 2px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
 }
-.link::after{
-    content: '';
-    width: 100%;
-    height: 1px;
-    background-color: #fff;
-    border-radius: 4px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform .25s ease;
+.link::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
 }
-.link:hover::after{
-    transform: scaleX(1);
+.link:hover::after {
+  transform: scaleX(1);
 }
-#logo{
-    display: flex;
+#logo {
+  display: flex;
+}
+#logo img {
+  position: static;
+  width: 70px;
+  height: 70px;
 
+  border-radius: 10px;
 }
-#logo img{
-    position: static;
-    width: 70px;
-    height: 70px;
-
-    border-radius:10px
+nav ul {
+  align-items: center;
 }
-nav ul{
-    
-    
+nav ul li {
+  /* Colocar os elementos em linhas */
+  display: inline-block;
+  /* Espaço entre os links*/
+  margin: 10px;
+  margin-top: 25px;
 }
-nav ul li{
-    /* Colocar os elementos em linhas */
-    display: inline-block;
-    /* Espaço entre os links*/
-    margin: 10px;
-    margin-top: 25px;
+nav ul li a {
+  color: white;
+  font-family: arial;
+  font-size: 17pt;
+  /* tirar o sublinado dos links*/
+  text-decoration: none;
 }
-nav ul li a{
-    color: white;
-    font-family: arial;
-    font-size: 17pt;
-    /* tirar o sublinado dos links*/
-    text-decoration: none;
+#redes {
+  position: absolute;
+  right: 50px;
 }
-#redes{
-    position: static;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-#redes ul{
-    /* retirar as bolinhas de marcação*/
-    list-style: none;
+#redes ul {
+  /* retirar as bolinhas de marcação*/
+  list-style: none;
 }
 #redes ul li {
-    display: inline-block;
-    margin-top: 25px;
+  display: inline-block;
+  margin-top: 25px;
 }
-#redes ul li a img{
-    width: 25px;
-    height: 25px;
+#redes ul li a img {
+  width: 25px;
+  height: 25px;
 }
-header{
-    padding-top: 50px;
-    text-align: center;
-    background-size: 100%;
-    background-position-y: -450px;
-    background-image: url("https://diaonline.ig.com.br/wp-content/uploads/2019/01/doces-em-goiania-lugares-para-provar-verdadeiras-delicias-9.jpg");
-    border-radius:50px;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-bottom: 50px;
-}#produtoheader{
-    padding-top: 50px;
-    text-align: center;
-    background-size: 100%;
-    background-position-y: -380px;
-    background-image: url("https://cdn.folhape.com.br/img/pc/1100/1/dn_arquivo/2021/10/0910sa2120.jpg");
-    border-radius:50px;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-bottom: 50px;
+header {
+  padding-top: 50px;
+  text-align: center;
+  background-size: 100%;
+  background-position-y: -450px;
+  background-image: url("https://diaonline.ig.com.br/wp-content/uploads/2019/01/doces-em-goiania-lugares-para-provar-verdadeiras-delicias-9.jpg");
+  border-radius: 50px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-bottom: 50px;
 }
-#contato{
-    padding-top: 50px;
-    text-align: center;
-    background-size: 100%;
-    background-position-y: -400px;
-    background-image: url("https://diaonline.ig.com.br/wp-content/uploads/2020/07/salgados-em-rio-verde-opcoes-para-comprar-na-hora-ou-encomendar.png");
-    border-radius:50px;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-bottom: 50px;
+#produtoheader {
+  padding-top: 50px;
+  text-align: center;
+  background-size: 100%;
+  background-position-y: -380px;
+  background-image: url("https://cdn.folhape.com.br/img/pc/1100/1/dn_arquivo/2021/10/0910sa2120.jpg");
+  border-radius: 50px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-bottom: 50px;
 }
-#locaheader{
-    padding-top: 50px;
-    text-align: center;
-    background-size: 100%;
-    background-position-y: -400px;
-    background-image: url("https://soupetropolis.com/wp-content/uploads/2020/07/kit-festa.jpg");
-    border-radius:50px;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-bottom: 50px;
+#contato {
+  padding-top: 50px;
+  text-align: center;
+  background-size: 100%;
+  background-position-y: -400px;
+  background-image: url("https://diaonline.ig.com.br/wp-content/uploads/2020/07/salgados-em-rio-verde-opcoes-para-comprar-na-hora-ou-encomendar.png");
+  border-radius: 50px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-bottom: 50px;
+}
+#locaheader {
+  padding-top: 50px;
+  text-align: center;
+  background-size: 100%;
+  background-position-y: -400px;
+  background-image: url("https://soupetropolis.com/wp-content/uploads/2020/07/kit-festa.jpg");
+  border-radius: 50px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-bottom: 50px;
 }
 
-
-h1{
-    font-family:"Gill Sans";
-    font-size: 65pt;
-    /* Vamos aplicar uma sombra: 
+h1 {
+  font-family: "Gill Sans";
+  font-size: 65pt;
+  /* Vamos aplicar uma sombra: 
     1-Elemento é a posição horizontal da somba;
     2-Elemento é a posição vetical da sombra
     3-Elemento é o efeito de esfumação da sombra */
-    text-shadow: 2px 2px 5px black;
-    color: #fff;
-
-  }
-main{
-    padding: 20px;
+  text-shadow: 2px 2px 5px black;
+  color: #fff;
 }
-#endereco{
-    font-family: arial;
-    font-size:14pt;
-    color: black;
-    width: 300px;
-    text-align: center;
+main {
+  padding: 20px;
+}
+#endereco {
+  font-family: arial;
+  font-size: 14pt;
+  color: black;
+  width: 300px;
+  text-align: center;
 }
 /* ================== Incio da formatação css para o home ============================== */
-h2{
-    text-align: center;
-    font-family:courier;
-    font-size:30pt;
-    border-bottom: dashed darkslateblue;
-    margin:20px;
-    color: white;
-    text-shadow: 2px 2px 5px black;
-
+h2 {
+  text-align: center;
+  font-family: courier;
+  font-size: 30pt;
+  border-bottom: dashed darkslateblue;
+  margin: 20px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
 }
-main p{
-    margin: 10px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align:justify;
-    font-family: "Lucida Sans";
-    font-size: 12pt;
-    line-height: 24px;
-    background-color: rgb(255, 81, 0);
-    border-radius: 10px;
-    color: white;
+main p {
+  margin: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-family: "Lucida Sans";
+  font-size: 12pt;
+  line-height: 24px;
+  background-color: rgb(255, 81, 0);
+  border-radius: 10px;
+  color: white;
 }
-#imghome{
-    text-align: center;
-    transition: ease 1s;
+#imghome {
+  text-align: center;
+  transition: ease 1s;
 }
-#imghome img{
-    width: 400px;
-    height: 400px;
-    border-radius: 50px;
-    margin: 30px;
-    transition: ease 1s;
-}
-
-body{
-   background-image: url(../img/fundo3.´ng.jpg);
+#imghome img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50px;
+  margin: 30px;
+  transition: ease 1s;
 }
 
-#imghome img:hover{
-    cursor: pointer;
-   z-index: 1000;
-   transform: scale(1.5);
-   box-shadow: 0px 0px 0px 100vw rgba(0, 0, 0, 0.8);
+body {
+  background-image: url(../img/fundo3.´ng.jpg);
+}
+
+#imghome img:hover {
+  cursor: pointer;
+  z-index: 1000;
+  transform: scale(1.5);
+  box-shadow: 0px 0px 0px 100vw rgba(0, 0, 0, 0.8);
 }
 
 /* Inicio de estilização da pagina produtos */
-h3{
-    text-transform: uppercase;
-    font-size: 20pt;
-    font-family: verdana;
-    color: rgb(190, 127, 10);
-    margin: 30px;
-    text-shadow: 2px 2px 5px black;
-    border-bottom: dashed darkslateblue;
+h3 {
+  text-transform: uppercase;
+  font-size: 20pt;
+  font-family: verdana;
+  color: rgb(190, 127, 10);
+  margin: 30px;
+  text-shadow: 2px 2px 5px black;
+  border-bottom: dashed darkslateblue;
 }
 #linha #produto #imgproduto img {
-    width: 300px;
-    height: 300px;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-    margin: 10px;
-  }
+  width: 300px;
+  height: 300px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin: 10px;
+}
 
 #linha {
-    display: flex;
-    flex-direction: row;
-    /* Realizar a quebra de linha para os demais produtos que forem adicionados*/
-    flex-wrap: wrap;
-    background-color: rgb(252, 242, 229);
-    border-radius: 50px;
-  }
-  #linha #produto {
-    width: 40%;
-    margin: 10px;
-    /* Determinar que o conteudo do produto será flexiviel */
-    display: flex;
-    flex-direction: row;
-    margin-right: 125px;
-    margin-bottom: 90px;
-  }
-  
-  #linha #produto #imgprod img {
-    width:  100%;
-    height: 100%;
-    border-radius: 10px;
-    margin: 10px;
-    box-shadow: 0px 0px 10px 6px silver;
-  }
-  h4 {
-    font-family: verdana;
-    font-size: 20pt;
-    margin-right: 10px;
-  }
-  h5 {
-    font-family: "Lucida Sans";
-    font-weight: lighter;
-    font-size: 10pt;
-    color: rgb(51, 51, 51);
-  }
-  h6 {
-    font-family: "Lucida Sans";
-    color: darkred;
-    font-size: 20pt;
-    margin: 30px;
-    margin-left: auto;
-  }
-  #linha #produto:hover {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    border-radius: 20px;
-  }
-  h2 {
-    color: white;
-    text-shadow: 2px 2px 5px black;
-  }
-  
-  
-  /* ================== Fim dos estilos para o cardápio ====================*/
+  display: flex;
+  flex-direction: row;
+  /* Realizar a quebra de linha para os demais produtos que forem adicionados*/
+  flex-wrap: wrap;
+  background-color: rgb(252, 242, 229);
+  border-radius: 50px;
+}
+#linha #produto {
+  width: 40%;
+  margin: 10px;
+  /* Determinar que o conteudo do produto será flexiviel */
+  display: flex;
+  flex-direction: row;
+  margin-right: 125px;
+  margin-bottom: 90px;
+}
+
+#linha #produto #imgprod img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0px 0px 10px 6px silver;
+}
+h4 {
+  font-family: verdana;
+  font-size: 20pt;
+  margin-right: 10px;
+}
+h5 {
+  font-family: "Lucida Sans";
+  font-weight: lighter;
+  font-size: 10pt;
+  color: rgb(51, 51, 51);
+}
+h6 {
+  font-family: "Lucida Sans";
+  color: darkred;
+  font-size: 20pt;
+  margin: 30px;
+  margin-left: auto;
+}
+#linha #produto:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+}
+h2 {
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+/* ================== Fim dos estilos para o cardápio ====================*/
 /* ================== Incio do estilo do contato ====================== */
 
 main form {
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    box-shadow: 0px 0px 50px rgb(31, 6, 6);
-    background-color: rgb(255, 81, 0);
-    border-radius: 20px;
-  }
-  
-  main form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-family: Verdana;
-    border: 0px;
-    border-bottom: 1px solid black;
-    outline: 0px;
-    outline-color: brown;
-    border-radius: 5px;
-  }
-  main form input,
-  main form select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-family: Verdana;
-    border: 0px;
-    border-bottom: 1px solid black;
-    outline: 0px;
-    outline-color: brown;
-    border-radius: 5px;
-  }
-  main form input,
-  main form select,
-  main form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-family: Verdana;
-    border: 0px;
-    border-bottom: 1px solid black;
-    outline: 0px;
-    outline-color: brown;
-  }
-  main form input[type="tel"],
-  main form select {
-    width: 49.6%;
-  }
-  main form textarea {
-    height: 200px;
-    border-radius: 5px;
-  }
-  main form input[type="submit"] {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    width: 20%;
-    border: 0px;
-    transition: ease 0.5s;
-  }
-  main form input[type="submit"]:hover {
-    cursor: pointer;
-    background-color: black;
-    color: white;
-  }
-  
-  /* ================== Fim do estilo do contato ======================== */
-  
-  /* ================== Incio do estilo do mapa =========================== */
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  box-shadow: 0px 0px 50px rgb(31, 6, 6);
+  background-color: rgb(255, 81, 0);
+  border-radius: 20px;
+}
+
+main form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: Verdana;
+  border: 0px;
+  border-bottom: 1px solid black;
+  outline: 0px;
+  outline-color: brown;
+  border-radius: 5px;
+}
+main form input,
+main form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: Verdana;
+  border: 0px;
+  border-bottom: 1px solid black;
+  outline: 0px;
+  outline-color: brown;
+  border-radius: 5px;
+}
+main form input,
+main form select,
+main form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: Verdana;
+  border: 0px;
+  border-bottom: 1px solid black;
+  outline: 0px;
+  outline-color: brown;
+}
+main form input[type="tel"],
+main form select {
+  width: 49.6%;
+}
+main form textarea {
+  height: 200px;
+  border-radius: 5px;
+}
+main form input[type="submit"] {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  width: 20%;
+  border: 0px;
+  transition: ease 0.5s;
+}
+main form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+/* ================== Fim do estilo do contato ======================== */
+
+/* ================== Incio do estilo do mapa =========================== */
 
 #mapa {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #mapa iframe {
-    width: 100%;
-    height: 500px;
-  }
-  /* ================== Fim do estilo do mapa =========================== */
-  
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#mapa iframe {
+  width: 100%;
+  height: 500px;
+}
+/* ================== Fim do estilo do mapa =========================== */
 
-  .titmain {
-    width: 100%;
-    background: url(/imagens/layout/titbg.png);
-    margin: 30px 0;
+.titmain {
+  width: 100%;
+  background: url(/imagens/layout/titbg.png);
+  margin: 30px 0;
 }
 center {
-    display: block;
-    text-align: -webkit-box;
+  display: block;
+  text-align: -webkit-box;
 }
 .tit {
-    display: inline-block;
-    /* background: #e6d9c6 url(/imagens/layout/bgmain.jpg); */
+  display: inline-block;
+  /* background: #e6d9c6 url(/imagens/layout/bgmain.jpg); */
 }
 
-  .ctt_box{
+.ctt_box {
   display: inline-block;
   width: 45%;
   max-width: 230px;
@@ -388,158 +381,619 @@ center {
   padding: 10px;
   margin: 10px;
   font-size: 0.8em;
-  }
-  b {
-    font-weight: bold;
+}
+b {
+  font-weight: bold;
 }
 .rodape {
-    width: 100%;
-    margin: 0;
-    background: rgb(255, 81, 0);
-    text-align: center;
-    color: #fff;
-    box-shadow: inset 0 10px 10px rgb(0 0 0 / 40%);
+  width: 100%;
+  background: rgb(255, 81, 0);
+  text-align: center;
+  color: #fff;
+  box-shadow: inset 0 10px 10px rgb(0 0 0 / 40%);
 }
 .rodbox {
-    display: inline-block;
-    width: 100%;
-    max-width: 300px;
-    vertical-align: top;
-    padding: 40px 10px 50px;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  vertical-align: top;
+  padding: 40px 10px 50px;
 }
 a.branco {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 element.style {
-    font-family: "Bad script";
-    font-size: 1.2em;
+  font-family: "Bad script";
+  font-size: 1.2em;
 }
 .redes_bot {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 20px;
-    vertical-align: top;
-    padding-top: 6px;
-    text-align: center;
-    transform: perspective(1px) translateZ(0);
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  vertical-align: top;
+  padding-top: 6px;
+  text-align: center;
+  transform: perspective(1px) translateZ(0);
 }
 body {
-    background: #e6d9c6 url(https://img.freepik.com/vetores-gratis/preto-escuro-3d-baixo-poli-fundo-geometrico_79145-393.jpg?w=1380) fixed;
-    font-family: Nunito,Arial,Helvetica,Garuda;
-    font-size: 1em;
-    font-weight: 400;
-    color: #241500;
-    height: 100%;
-    margin: 0;
-    width: 100%;
+  background: #e6d9c6
+    url(https://img.freepik.com/vetores-gratis/preto-escuro-3d-baixo-poli-fundo-geometrico_79145-393.jpg?w=1380)
+    fixed;
+  font-family: Nunito, Arial, Helvetica, Garuda;
+  font-size: 1em;
+  font-weight: 400;
+  color: #241500;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+#abrir,
+#fechar {
+  display: none; /*não devem aparecer quando a tela está grande*/
 }
 /* ================== Aréa de responsividade ========================== */
 /* Telas de smartphones */
 @media (min-width: 0px) and (max-width: 576px) {
-    header {
-        height: 150px;
-        background-position-y: -160px;
-    }
-    h1 {
-      font-size: 25pt;
-    }
-    h2{
-        font-size: 15pt;
-    }
-    nav {
-      /* width: 200px; */
-      height: 70vh;
-      position: absolute;
-      border-radius: 20px;
-      display: block;
-      box-shadow: 0px 0px 10px 2px black;
-      
-    }
-    nav ul li {
-        width: 85%;
-      display: block;
-      text-align: center;
-      margin-bottom:0px;
-      border-bottom: 2px solid rgb(245, 171, 147);
-    }
-    #abrir {
-      padding: 5px;
-      font-size: 20pt;
-      display: block;
-      text-decoration: none;
-      color: rgb(255, 81, 0);
-      width: 35px;
-      position: absolute;
-      top: 5px;
-      left: 5px;
-    }
-    #fechar {
-      padding: 5px;
-      font-size: 30pt;
-      display: block;
-      text-decoration: none;
-      color: black;
-      width: 35px;
-      position: absolute;
-      top: 0px;
-      left: 5px;
-      cursor: pointer;
-    }
-    #imghome img {
-      width: 250px;
-      height: 250px;
-    }
-    .rodape{
-        display: inline-block;
-        /* text-align: center; */
-        padding: 5px;
-        font-size: 0.5em;
-        bottom: 15px;
-      }
-      .rodbox {
-        display: inline-block;
-        width: 100%;
-        max-width: 100px;
-        vertical-align: top;
-        padding: 5px 5px 5px;
-    }
-      #endereco,
-      #redes {
-        margin-left: auto;
-        margin-right: auto;
-      }
-      #linha {
-        flex-direction: column;
-      }
-      #linha #produto {
-        width: 100%;
-        flex-direction: column;
-      }
-      #linha #produto #imgprod,
-      #linha #produto #descricao {
-        width: 90%;
-        margin: 15px;
-        transition: ease 0.5s;
-      }
-    }
-    main form {
-      width: 90%;
-    }
-    #produtoheader{
-        height: 150px;
-        background-position-y: -200px;
-        /* padding-top: 140px;
-        background-size: 100%;*/
-    }
-    #contato{
-        height: 150px;
-        background-position-y: -160px;
+  header {
+    height: 150px;
+    background-position-y: -147px;
+  }
+  h1 {
+    font-size: 20pt;
+  }
+  h2 {
+    font-size: 15pt;
+  }
+  nav {
+    /* width: 200px; */
+    height: 70vh;
+    position: absolute;
+    border-radius: 20px;
+    display: block;
+    box-shadow: 0px 0px 10px 2px black;
+  }
+  nav ul li {
+    width: 85%;
+    display: block;
+    text-align: center;
+    margin-bottom: 0px;
+    border-bottom: 2px solid rgb(245, 171, 147);
+  }
+  #abrir {
+    padding: 5px;
+    font-size: 20pt;
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 81, 0);
+    width: 35px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  #fechar {
+    padding: 5px;
+    font-size: 30pt;
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 35px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    cursor: pointer;
+  }
+  #imghome img {
+    width: 250px;
+    height: 250px;
+  }
+  .rodape {
+    display: inline-block;
+    /* text-align: center; */
+    padding: 5px;
+    font-size: 0.5em;
+    bottom: 15px;
+  }
+  .rodbox {
+    display: inline-block;
+    width: 100%;
+    max-width: 100px;
+    vertical-align: top;
+    padding: 5px 5px 5px;
+  }
+  #endereco,
+  #redes {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #linha {
+    flex-direction: column;
+    width: 100% !important;
+  }
 
-    }
-    #locaheader{
-        height: 150px;
-        background-position-y: -160px;
+  #linha #produto {
+    width: 100%;
+    flex-direction: column;
+  }
+  #linha #produto #imgproduto img {
+    width: 90%;
+    height: auto;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin: 10px;
+  }
+  #linha #produto #imgproduto,
+  #linha #produto #descricao {
+    width: 90%;
+    margin: 15px;
+    transition: ease 0.5s;
+  }
+  #produtoheader {
+    height: 150px;
+    background-position-y: -14px !important;
+  }
+  #contato {
+    height: 150px;
+    background-position-y: -145px !important;
+  }
+  #locaheader {
+    height: 150px;
+    background-position-y: -146px !important;
+  }
+}
 
-    }
+/* Telas de smartphones */
+@media (min-width: 577px) and (max-width: 768px) {
+  header {
+    height: 150px;
+    background-position-y: -200px;
+  }
+  h1 {
+    font-size: 25pt;
+  }
+  h2 {
+    font-size: 18pt;
+  }
+  nav {
+    /* width: 200px; */
+    height: 70vh;
+    position: absolute;
+    border-radius: 20px;
+    display: block;
+    box-shadow: 0px 0px 10px 2px black;
+  }
+  nav ul li {
+    width: 85%;
+    display: block;
+    text-align: center;
+    margin-bottom: 0px;
+    border-bottom: 2px solid rgb(245, 171, 147);
+  }
+
+  #abrir {
+    padding: 5px;
+    font-size: 20pt;
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 81, 0);
+    width: 35px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  #fechar {
+    padding: 5px;
+    font-size: 30pt;
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 35px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    cursor: pointer;
+  }
+  #imghome img {
+    width: 250px;
+    height: 250px;
+  }
+  .rodape {
+    display: inline-block;
+    /* text-align: center; */
+    padding: 5px;
+    font-size: 0.5em;
+    bottom: 15px;
+    width: 100%;
+  }
+  .rodbox {
+    display: inline-block;
+    width: 100%;
+    max-width: 100px;
+    vertical-align: top;
+    padding: 5px 5px 5px;
+  }
+  #endereco,
+  #redes {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #linha {
+    flex-direction: column;
+    width: 100%;
+  }
+  #linha #produto #imgproduto img {
+    width: 100%;
+    height: auto;
+  }
+  #linha #produto {
+    width: 90%;
+    flex-direction: column;
+  }
+  #linha #produto #imgprod,
+  #linha #produto #descricao {
+    width: 90%;
+    margin: 15px;
+    transition: ease 0.5s;
+  }
+
+  main form {
+    width: 90%;
+  }
+  #produtoheader {
+    height: 150px;
+    background-position-y: -100px;
+    /* padding-top: 140px;
+  background-size: 100%; */
+  }
+  #contato {
+    height: 150px;
+    background-position-y: -200px;
+  }
+  #locaheader {
+    height: 150px;
+    background-position-y: -200px;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  header {
+    height: 150px;
+    background-position-y: -200px;
+  }
+  h1 {
+    font-size: 50pt;
+  }
+  h2 {
+    font-size: 18pt;
+  }
+  /* nav {
+    height: 70vh;
+    position: absolute;
+    border-radius: 20px;
+    display: block;
+    box-shadow: 0px 0px 10px 2px black;
+  }
+  nav ul li {
+    width: 85%;
+    display: block;
+    text-align: center;
+    margin-bottom: 0px;
+    border-bottom: 2px solid rgb(245, 171, 147);
+  }
+
+  #abrir {
+    padding: 5px;
+    font-size: 20pt;
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 81, 0);
+    width: 35px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  #fechar {
+    padding: 5px;
+    font-size: 30pt;
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 35px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    cursor: pointer;
+  } */
+  #imghome img {
+    width: 500px;
+    height: 500px;
+  }
+  .rodape {
+    display: inline-block;
+    /* text-align: center; */
+    padding: 5px;
+    font-size: 0.5em;
+    bottom: 15px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+  }
+  .rodbox {
+    display: inline-block;
+    width: 100%;
+    max-width: 100px;
+    vertical-align: top;
+    padding: 5px 5px 5px;
+  }
+  #endereco,
+  #redes {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #linha {
+    flex-direction: column;
+    width: 100%;
+  }
+  #linha #produto #imgproduto img {
+    width: 100%;
+    height: auto;
+  }
+  #linha #produto {
+    width: 90%;
+    flex-direction: column;
+  }
+  #linha #produto #imgprod,
+  #linha #produto #descricao {
+    width: 90%;
+    margin: 15px;
+    transition: ease 0.5s;
+  }
+}
+main form {
+  width: 90%;
+}
+#mapa {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#produtoheader {
+  height: 150px;
+  background-position-y: -100px;
+  /* padding-top: 100px;
+  background-size: 100%; */
+}
+#contato {
+  height: 150px;
+  background-position-y: -170px;
+}
+#locaheader {
+  height: 150px;
+  background-position-y: -120px;
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  header {
+    height: 150px;
+    background-position-y: -200px;
+  }
+  h1 {
+    font-size: 25pt;
+  }
+  h2 {
+    font-size: 18pt;
+  }
+  /* nav {
+    height: 70vh;
+    position: absolute;
+    border-radius: 20px;
+    display: block;
+    box-shadow: 0px 0px 10px 2px black;
+  }
+  nav ul li {
+    width: 85%;
+    display: block;
+    text-align: center;
+    margin-bottom: 0px;
+    border-bottom: 2px solid rgb(245, 171, 147);
+  }
+
+  #abrir {
+    padding: 5px;
+    font-size: 20pt;
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 81, 0);
+    width: 35px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  #fechar {
+    padding: 5px;
+    font-size: 30pt;
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 35px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    cursor: pointer;
+  } */
+  #imghome img {
+    width: 80%;
+    height: auto;
+  }
+  .rodape {
+    display: inline-block;
+    /* text-align: center; */
+    padding: 5px;
+    font-size: 0.5em;
+    bottom: 15px;
+    width: 100%;
+    height: auto;
+  }
+  .rodbox {
+    display: inline-block;
+    width: 100%;
+    max-width: 100px;
+    vertical-align: top;
+    padding: 5px 5px 5px;
+  }
+  #endereco,
+  #redes {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #linha {
+    flex-direction: column;
+  }
+  #linha #produto {
+    width: 90%;
+    flex-direction: column;
+  }
+  #linha #produto #imgproduto img {
+    width: 100%;
+    height: auto;
+  }
+  #linha #produto #imgprod,
+  #linha #produto #descricao {
+    width: 90%;
+    margin: 15px;
+    transition: ease 0.5s;
+  }
+  #mapa {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  #produtoheader {
+    height: 150px;
+    background-position-y: -25px;
+    /* padding-top: 70px;
+  background-size: 100%; */
+  }
+  #contato {
+    height: 150px;
+    background-position-y: -100px;
+  }
+  #locaheader {
+    height: 150px;
+    background-position-y: -150px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+  header {
+    height: 150px;
+    background-position-y: -200px;
+  }
+  h1 {
+    font-size: 25pt;
+  }
+  h2 {
+    font-size: 18pt;
+  }
+  /* nav {
+    height: 70vh;
+    position: absolute;
+    border-radius: 20px;
+    display: block;
+    box-shadow: 0px 0px 10px 2px black;
+  }
+  nav ul li {
+    width: 85%;
+    display: block;
+    text-align: center;
+    margin-bottom: 0px;
+    border-bottom: 2px solid rgb(245, 171, 147);
+  }
+
+  #abrir {
+    padding: 5px;
+    font-size: 20pt;
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 81, 0);
+    width: 35px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  #fechar {
+    padding: 5px;
+    font-size: 30pt;
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 35px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    cursor: pointer;
+  } */
+  #imghome img {
+    width: 80%;
+    height: auto;
+  }
+  .rodape {
+    display: inline-block;
+    /* text-align: center; */
+    padding: 5px;
+    font-size: 0.5em;
+    bottom: 15px;
+    width: 100%;
+    height: auto;
+  }
+  .rodbox {
+    display: inline-block;
+    width: 100%;
+    max-width: 100px;
+    vertical-align: top;
+    padding: 5px 5px 5px;
+  }
+  #endereco,
+  #redes {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #linha {
+    flex-direction: column;
+  }
+  #linha #produto {
+    width: 90%;
+    flex-direction: column;
+  }
+  #linha #produto #imgproduto img {
+    width: 100%;
+    height: auto;
+  }
+  #linha #produto #imgprod,
+  #linha #produto #descricao {
+    width: 90%;
+    margin: 15px;
+    transition: ease 0.5s;
+  }
+  #mapa {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  #produtoheader {
+    height: 150px;
+    background-position-y: -25px;
+    /* padding-top: 70px;
+  background-size: 100%; */
+  }
+  #contato {
+    height: 150px;
+    background-position-y: -100px;
+  }
+  #locaheader {
+    height: 150px;
+    background-position-y: -180px;
+  }
+}
