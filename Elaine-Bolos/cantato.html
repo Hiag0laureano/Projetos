@@ -38,7 +38,7 @@
         <div class="ctt_box2"><img src="img/icofone.png" style="width:40px"><br><b style="color:#5c0001">TELEFONES</b><br>(11) 94054-0499</div>
           </center>
         </div>
-        <form action="">
+        <form onsubmit="return false">
             <!-- A caixa abaixo é d tipo texto, pois será digitado o nome do cliente -->
             <input type="text" placeholder="Nome Completo" required>
              <!-- A caixa abaixo será formatada com o tipo email, isso permite a configuração do tipo email a validação também -->
@@ -57,7 +57,7 @@
 
             </textarea>
             <!-- O elemeto abaixo será do tipo submit(Submeter), ou seja, um botão para enviar os dados do formulario -->
-            <input type="submit" value="Enviar">
+            <input onclick="efetuarEnvio()" type="submit" value="Enviar">
         </form>
     </main>
     <footer>
