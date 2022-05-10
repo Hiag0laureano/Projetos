@@ -437,8 +437,7 @@ body {
 /* Telas de smartphones */
 @media (min-width: 0px) and (max-width: 576px) {
   header {
-    height: 150px;
-    background-position-y: -147px;
+    display: none;
   }
   h1 {
     font-size: 20pt;
@@ -451,8 +450,9 @@ body {
     height: 70vh;
     position: absolute;
     border-radius: 20px;
-    display: block;
+    display: none;
     box-shadow: 0px 0px 10px 2px black;
+    top: 50px;
   }
   nav ul li {
     width: 85%;
@@ -494,6 +494,8 @@ body {
     padding: 5px;
     font-size: 0.5em;
     bottom: 15px;
+    position: fixed;
+    bottom: 0px;
   }
   .rodbox {
     display: inline-block;
@@ -513,7 +515,7 @@ body {
   }
 
   #linha #produto {
-    width: 100%;
+    width: 90%;
     flex-direction: column;
   }
   #linha #produto #imgproduto img {
@@ -595,8 +597,8 @@ body {
     cursor: pointer;
   }
   #imghome img {
-    width: 250px;
-    height: 250px;
+    width: 80%;
+    height: auto;
   }
   .rodape {
     display: inline-block;
@@ -605,6 +607,8 @@ body {
     font-size: 0.5em;
     bottom: 15px;
     width: 100%;
+    position: fixed;
+    bottom: 0px;
   }
   .rodbox {
     display: inline-block;
@@ -627,7 +631,7 @@ body {
     height: auto;
   }
   #linha #produto {
-    width: 90%;
+    width: 100%;
     flex-direction: column;
   }
   #linha #produto #imgprod,
@@ -740,7 +744,7 @@ body {
     height: auto;
   }
   #linha #produto {
-    width: 90%;
+    width: 100%;
     flex-direction: column;
   }
   #linha #produto #imgprod,
