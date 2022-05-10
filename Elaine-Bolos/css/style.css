@@ -382,6 +382,20 @@ center {
   margin: 10px;
   font-size: 0.8em;
 }
+.ctt_box2 {
+  display: inline-block;
+  width: 45%;
+  max-width: 230px;
+  min-height: 50px;
+  /* vertical-align: top; */
+  background: rgba(255, 190, 146, 0.904);
+  border: 1px #5c0001 solid;
+  border-radius: 5px;
+  padding: 40px;
+  padding-bottom: 26px;
+  margin: 10px;
+  font-size: 0.8em;
+}
 b {
   font-weight: bold;
 }
