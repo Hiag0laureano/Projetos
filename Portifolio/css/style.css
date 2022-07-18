@@ -1,0 +1,283 @@
+* {
+    margin: 0px; /*Margem externa das caixas*/
+    padding: 0px; /*Mergem interna das caixas*/
+    box-sizing: border-box; /*Ajuste das caixas sem a soma com a largura*/
+}
+.hero{
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/minhafoto.png);
+  background-size: cover;
+  background-position: center;
+  border: 0px 0px 10px black;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.logo{
+    color: white;
+    font-size: 28px;
+    font-family: monospace;
+}
+span{
+    color: blueviolet;
+}
+nav ul li{
+    list-style-type:none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight:bold;
+    font-family: Optima, sans-serif;
+}
+nav ul li a:hover{
+    color:blueviolet;
+    transition: .3s;
+}
+button{
+    border:none;
+    background: blueviolet;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4s;
+}
+button:hover{
+    transform: scale(1.3);
+}
+header{
+    margin-top: 300px;
+    color: white;
+    text-align: center;
+    font-family: Optima, sans-serif;
+}
+h1{
+    
+    font-size: 70px;
+}
+.ftHome img{
+    width: auto;
+    height: 600px;
+}
+.fundoHome{
+    height: 100%;
+    width: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/capa3.jpg);
+    background-size: cover;
+    background-position: center;
+   
+  }
+main{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+.sobreMim{  
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+.sobre{
+    color:#9c9fe9;
+    font-size: 25pt;
+    margin-right: 1000px;
+    font-family: cursive;
+}
+.btnSobre button{
+    border:none;
+    background: #9c9fe9;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4s;
+}
+.textoSobre p span{
+    display: flex;
+    flex-direction: row;
+    padding-top: 125px;
+    padding-left: 30%;
+    padding-right: 10%;
+    color: white;
+    font-size: 25px;
+    font-family: cursive;
+}
+.TituloProjetos{
+    color: white;
+    padding-top: 200px;
+    padding-left: 40%;
+    padding-right: 10%;
+    font-family: Snell Roundhand, cursive;
+}
+.TodosProjetos{
+    flex-direction: wrap;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+ 
+}
+/* <!-- Inicio do Primeiro projeto --> */
+.Projeto1{
+  display: flex;
+  flex-direction: row;
+}
+.imgProjetos{
+    display: block;
+    /* position: absolute; */
+    padding-top: 200px;
+    padding-left: 15%;
+    padding-right: 0%;
+}
+.imgProjetos img{
+    height: 550px;
+    width: 550px;
+    border-radius: 10px;
+}
+.sobreProjeto{     
+    display: block;
+    /* position: absolute; */
+    padding-top: 350px;
+    padding-left: -100px;
+    padding-right: 0%;
+    font-family: cursive;
+    
+}
+.sobreProjeto p span{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-left: 13%;
+    padding-right: 30%;
+    color: white;
+    font-size: 25px;
+    font-family: cursive;
+}
+.sobreProjeto h3{
+    color: #9c9fe9;
+    padding-bottom: 15px;
+    padding-left: 90px;
+    font-family: Noto Sans, sans-serif;
+}
+.sobreProjeto h2{
+    color: white; 
+    padding-left: 90px;
+    padding-bottom: 30px;
+}
+/* Fim do Primeiro projeto */
+
+/* <!-- Inicio do Segundo projeto --> */
+.Projeto2{
+  display: flex;
+  flex-direction: row;
+}
+.imgProjetos2{
+    display: block;
+    /* position: absolute; */
+    padding-top: 200px;
+    padding-left: 5%;
+    padding-right: 25%;
+}
+.imgProjetos2 img{
+    height: 550px;
+    width: 550px;
+    border-radius: 10px;
+}
+.sobreProjeto2{     
+    display: block;
+    /* position: absolute; */
+    padding-top: 350px;
+    padding-left: 220px;
+    padding-right: 0%;
+    
+}
+.sobreProjeto2 p span{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-left: 30%;
+    padding-right: 10%;
+    color: white;
+    font-size: 23px;
+    font-family: cursive;
+}
+.sobreProjeto2 h3{
+    color: #9c9fe9;
+    padding-bottom: 15px;
+    padding-left: 170px;
+    font-family: Noto Sans, sans-serif;
+}
+.sobreProjeto2 h2{
+    color: white; 
+    padding-left: 170px;
+    padding-bottom: 30px;
+    font-family: cursive;
+}
+/* <!-- Fim do Segundo projeto --> */
+.footer{
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm309-aew-013_1_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=2724bd9481a065ee24e7e7eaaabf1c55);
+    background-size: cover;
+    background-position: center;
+    ;
+}
+.footer p{
+    display: flex;
+    flex-direction: row;
+    padding-top: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 30pt;
+    font-family: Bradley Hand, cursive;
+    color: white;
+}
+.btnfooter{
+    padding-top: 15%;
+    padding-left: 10%;
+    padding-right: 0%;  
+}
+.redesSociais{
+    padding-top: 10px;
+    padding-left: 83%;
+    padding-right: 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+}
+.GitHub{
+    margin-right: 10px;
+}
+.Instagram{
+    margin-right: 10px;
+}
+.GitHub img{
+    height: 25px;
+    width: auto;
+}
+
+.redesSociais .Instagram img{
+    height: 25px;
+    width: auto;   
+}
+.Facebook img{
+    height: 25px;
+    width: auto;
+}

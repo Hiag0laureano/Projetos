@@ -11,6 +11,7 @@ nav {
   transition: ease 0.2s;
   flex-direction: row;
   display: flex;
+  
 }
 .link {
   list-style: none;
@@ -58,6 +59,7 @@ nav ul li {
   /* Espaço entre os links*/
   margin: 10px;
   margin-top: 25px;
+  
 }
 nav ul li a {
   color: white;
