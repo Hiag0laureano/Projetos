@@ -648,7 +648,7 @@ body {
   }
   #linha #produto {
     width: 100%;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   #linha #produto #imgprod,
   #linha #produto #descricao {
